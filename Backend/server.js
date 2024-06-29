@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import Actions from "./Actions.js";
 // import Actions from './Actions';
 // import Actions from '../frontend/src/Actions';
+
+console.log("ok");
 dotenv.config();
 const app = express();
 const server = createServer(app);
