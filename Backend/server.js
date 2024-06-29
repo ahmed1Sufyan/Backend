@@ -14,7 +14,7 @@ const io = new Server(server);
 
 const userSockets = {};
 app.get("/", (req, res) => {
-  res.send("Welcome");
+  res.send("Welcome to my server");
 });
 
 const getlAllconnectedClients = (roomId) => {
