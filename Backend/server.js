@@ -9,9 +9,13 @@ import Actions from "./Actions.js";
 console.log("ok");
 dotenv.config();
 const app = express();
+import cors from 'cors'
 const server = createServer(app);
 const io = new Server(server);
 
+
+app.use(express.json())
+app.use(cors())
 const userSockets = {};
 app.get("/", (req, res) => {
   res.send("Welcome to my server");
